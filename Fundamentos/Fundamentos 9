@@ -99,5 +99,6 @@ Usando estoyEnUnBorde y estoyRodeadoDe, definí hayLimite.
 
 Resolución: function hayLimite(){
 return(estoyEnUnBorde() || estoyRodeadoDe(Rojo))
+
 }
 
