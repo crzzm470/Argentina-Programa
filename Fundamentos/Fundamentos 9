@@ -88,6 +88,7 @@ Resolución: Resolución: function hayBolitasLejosAl(direccion, color, distancia
 
 Ejercicio 12: Estoy rodeado de viejas bolitas
 Valiéndote de hayBolitasAl, definí la función estoyRodeadoDe(color) que indica si el cabezal está rodeado de bolitas de ese color.
+Decimos que el cabezal "está rodeado" si hay bolitas de ese color en las cuatro direcciones: Norte, Este, Sur y Oeste.
 
 Resolución: function estoyRodeadoDe(color) {
 return (hayBolitasAl(Norte, color) && hayBolitasAl(Este, color) && hayBolitasAl(Sur, color) && hayBolitasAl(Oeste, color))
