@@ -366,3 +366,4 @@ def self.recibir_mate!
   @ganas_de_hablar = 0
 end
 end
+

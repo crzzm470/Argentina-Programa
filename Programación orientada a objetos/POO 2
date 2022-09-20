@@ -258,3 +258,4 @@ module Pepita
     @energia -= (@ciudad.kilometro - destino.kilometro).abs / 2 
   end
 end
+
