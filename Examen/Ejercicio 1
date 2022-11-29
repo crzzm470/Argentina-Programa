@@ -1,0 +1,26 @@
+Ale se aburrió de ver vacío su balcón. Así que compró 4 macetas con plantas para ponerlas en cada esquina, de esta forma:
+
+
+0	1	2	
+2	
+2
+1	
+1
+0	
+0
+0	1	2	
+
+Creá un programa que ponga una maceta (bolita Verde) en cada esquina del balcón. El cabezal empieza en el origen (o sea, en el borde Sur-Oeste) pero no te preocupes por dónde finaliza.
+
+program{
+  Poner(Verde)
+  Mover(Norte)
+  Mover(Norte)
+  Poner(Verde)
+  Mover(Este)
+  Mover(Este)
+  Poner(Verde)
+  Mover(Sur)
+  Mover(Sur)
+  Poner(Verde)
+}

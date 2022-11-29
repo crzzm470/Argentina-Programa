@@ -1,0 +1,12 @@
+A Oli le gusta mucho leer , pero le interesa saber cuántos de los libros que leyó son largos. Cada uno de los libros sabe responder al mensaje demasiado_largo?.
+
+Definí en Ruby el método cantidad_de_libros_largos que responda a cuántos libros largos leyó Oli.
+
+module Oli
+  @libros_leidos = [MartinFierro, Fundacion, ElPrincipito, HarryPotter]
+  
+  def self.cantidad_de_libros_largos
+    @largos = @libros_leidos.count { |libro| libro.demasiado_largo? }
+  end
+  
+end

@@ -1,0 +1,53 @@
+Una productora de cine se encarga de invertir en las películas que trabajan con ella. Cuando esta empresa invierte:
+
+Las películas de tipo Documental duplican su duracion;
+las de Horror contratan 10 extras;
+las de género Comedia no se modifican.
+
+Definí el método invertir_en_peliculas! en la clase Productora y el método recibir_inversion! en los distintos tipos de películas. Definí los getters necesarios en cada una.
+
+class Productora
+  def initialize(peliculas)
+    @peliculas = peliculas
+  end
+  
+  def invertir_en_peliculas!
+  @peliculas.each { |pelicula| pelicula.recibir_inversion!}
+  
+   end
+end
+
+class Documental
+  def initialize(duracion)
+    @duracion = duracion
+  end
+  
+  def duracion
+    @duracion
+  end
+  
+  def recibir_inversion!
+    @duracion *= 2
+  end
+end
+
+class Horror 
+  def initialize(extras)
+    @extras = extras
+  end
+  
+  def extras
+    @extras
+  end
+  
+  def recibir_inversion!
+    @extras += 10
+  end
+end
+
+class Comedia
+  
+  def recibir_inversion!
+  end
+  
+end

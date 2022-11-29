@@ -1,0 +1,17 @@
+Ya pasamos por el tesoro de la matemática. Otro bien preciado es el tiempo . Es por ello que tratamos de usarlo sabiamente.
+
+Con esto en mente vamos a crear una función que dados un nombre y un apodo nos diga cuál de los dos es más corto.
+
+> elMasCorto("Luis", "Lucho")
+"Luis"
+
+> elMasCorto("Carolina", "Caro")
+"Caro"
+
+> elMasCorto("Ricardo", "Ringo")
+"Ringo"
+Definí la función elMasCorto.
+
+function elMasCorto(nombre,apodo){
+  return nombre.length < apodo.length ? nombre : apodo;
+}

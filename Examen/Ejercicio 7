@@ -1,0 +1,28 @@
+¡Dejemos atrás a JavaScript para pasar a Ruby!
+
+Vamos a modelar la clase Notebook para poder:
+
+cargar una cantidad de minutos determinada (si cargamos 10 minutos, su bateria incrementa en 10);
+ver si tiene carga suficiente, es decir, si su bateria es mayor a 83.
+
+Definí en Ruby, la clase Notebook que tenga un atributo @bateria con su getter. Las instancias de la clase Notebook entienden los mensajes cargar! (que recibe los minutos por parámetro y lo carga esa cantidad) y suficiente_bateria?. No te olvides de definir un initialize que reciba a la bateria inicial como parámetro.
+
+class Notebook
+  @bateria
+  
+  def initialize(bateriaInicial)
+    @bateria = bateriaInicial
+  end
+  
+  def bateria
+    @bateria
+  end
+  
+  def cargar!(minutos)
+    @bateria += minutos
+  end
+  
+  def suficiente_bateria?
+    @bateria>83
+  end
+end

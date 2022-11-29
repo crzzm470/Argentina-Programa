@@ -1,0 +1,30 @@
+Ale estudia Historia y pensó en crear una función que le ayude a hacer resúmenes . Para eso, consiguió registros de hechos históricos con la siguiente forma:
+
+let independenciaArgentina = {
+  suceso: "La declaración de la independencia de Argentina",
+  anio: 1816,
+  ciudad: "San Miguel de Tucumán"
+};
+
+let declaracionDerechosHumanos = {
+  suceso: "La declaración universal de los Derechos Humanos",
+  anio: 1948,
+  ciudad: "París"
+};
+La función deberá devolver un resumen de la información registrada de manera simple. Por ejemplo:
+
+> resumenSucesoHistorico(independenciaArgentina)
+"La Declaración de la independencia de Argentina ha tenido lugar hace 205 años en San Miguel de Tucumán"
+
+> resumenSucesoHistorico(declaracionDerechosHumanos)
+"La Declaración Universal de los Derechos Humanos ha tenido lugar hace 73 años en Paris"
+Definí la función resumenSucesoHistorico que nos permita obtener la información requerida. Asumí que estamos en 2021.
+
+function resumenSucesoHistorico(suceso){
+    let mensaje = "";
+    mensaje += suceso.suceso + " ha tenido lugar hace ";
+    let años = 2021 - suceso.anio;
+    mensaje += años + " años en " + suceso.ciudad;
+    
+    return mensaje;
+  }

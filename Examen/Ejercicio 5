@@ -1,0 +1,16 @@
+Vale está haciendo un trabajo de investigación y nos pidió ayuda . Necesita poder distinguir las palabras más cortas de una oración . Una palabra se considera corta si tiene menos de 5 letras. Veamos un ejemplo:
+
+> filtrarCortas(["Hari", "Seldon", "nacido", "en", "el", "año", "11988", "de", "la", "Era", "Galáctica"])
+
+["Hari", "en", "el", "año", "de", "la", "Era"]
+Definí la función filtrarCortas.
+
+function filtrarCortas(palabras){
+  let palabrasCortas = [];
+  for (let i=0; i<palabras.length; i++){
+    if (palabras[i].length < 5){
+      palabrasCortas.push(palabras[i])
+    }
+  }
+  return palabrasCortas;
+}

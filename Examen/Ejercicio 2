@@ -1,0 +1,17 @@
+A Ale no le gustó como quedó ese color en las macetas . ¡Programemos algo para poder probar como quedaría con cualquier color!
+
+Definí el procedimiento UbicarMacetas para que ponga macetas del color que reciba por parámetro en cada esquina. No te preocupes por donde termina el cabezal.
+
+procedure UbicarMacetas(color){
+  Poner(color)
+  Mover(Norte)
+  Mover(Norte)
+  Poner(color)
+  Mover(Este)
+  Mover(Este)
+  Poner(color)
+  Mover(Sur)
+  Mover(Sur)
+  Poner(color)
+  
+}

@@ -1,0 +1,16 @@
+Dejemos atrás los tableros y... ¡Pasemos a JavaScript!
+
+Cuando hacemos un examen de matemáticas es común verificar más de una vez si las cuentas que hicimos están bien.
+
+Para eso vamos a crear una función que reciba 3 números y nos diga si la multiplicación entre los 2 primeros es igual al tercero. Por ejemplo:
+
+> laMultiplicacionEsCorrecta(2, 4, 8)
+true //Porque 2 por 4 es igual a 8
+
+> laMultiplicacionEsCorrecta(3, 5, 12)
+false //Porque 3 por 5 es 15, no 12
+Definí la función laMultiplicacionEsCorrecta.
+
+function laMultiplicacionEsCorrecta(n1,n2,n3){
+  return n3 === n1*n2;
+}
